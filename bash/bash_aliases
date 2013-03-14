@@ -21,6 +21,7 @@ alias -- -="cd -"
 # Git
 alias g="git"
 alias gs="git status"
+alias gc="git checkout"
 
 # List dir contents aliases
 
