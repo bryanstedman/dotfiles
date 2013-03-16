@@ -20,8 +20,10 @@ alias -- -="cd -"
 
 # Git
 alias g="git"
+alias ga='git add'
+alias gc='git commit'
+alias gco="git checkout"
 alias gs="git status"
-alias gc="git checkout"
 
 # List dir contents aliases
 
