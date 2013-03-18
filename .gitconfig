@@ -1,0 +1,16 @@
+[alias]
+        down = pull
+        up = push
+        in = add
+        out = rm
+        done = commit -m
+        fuckedup = reset --hard
+        with = merge
+        home = checkout master
+        this = checkout
+        wtf = status
+        what = diff
+        huh = diff
+        bah = blame
+        damnit = blame
+        eh = config --get-regexp alias
