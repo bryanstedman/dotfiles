@@ -25,6 +25,9 @@ alias gc='git commit'
 alias gco="git checkout"
 alias gs="git status"
 
+# Open any files marked as “modified” in your default editor.
+alias changed='open `git status --porcelain | sed -ne "s/^ M //p"`'
+
 # List dir contents aliases
 
 # Long form no user group, color
