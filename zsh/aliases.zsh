@@ -1,12 +1,17 @@
-alias addalias='nano ~/.dotfiles/bash/bash_aliases'
+
+
+# Open stuff with Sublime Text
 alias subl='"/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"'
 
 # Start an HTTP server from a directory
 alias pserver='python -m SimpleHTTPServer'
 
-#!/bin/bash
 
-# bash_aliases
+# Tweaking dotfiles
+alias addalias='nano ~/.oh-my-zsh/custom/aliases.zsh'
+alias zshtheme='nano ~/.zshrc'
+alias ohmyzsh='subl ~/.oh-my-zsh'
+
 
 # Allow aliases to be with sudo
 alias sudo="sudo "
@@ -19,7 +24,7 @@ alias ~="cd ~"
 alias -- -="cd -"
 
 # Git
-alias g="git "
+# alias g="git "
 alias ga='git add'
 alias gc='git commit'
 alias gco="git checkout"
@@ -43,6 +48,9 @@ alias lat="ls -AGFoth"
 
 # Concatenate and print content of files (add line numbers)
 alias catn="cat -n"
+
+# YSlow
+alias yslow="phantomjs ~/scripts/yslow.js --disk-cache=false --info basic --format plain"
 
 # Fancycat™
 alias c="pygmentize -O style=solarized -f console256 -g"
