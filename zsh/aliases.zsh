@@ -11,6 +11,7 @@ alias pserver='python -m SimpleHTTPServer'
 # Allow aliases to be with sudo
 alias sudo="sudo "
 alias please="sudo "
+alias !!!="sudo !!"
 
 # Easier navigation: .., ..., ~ and -
 alias ..="cd .."
@@ -19,11 +20,15 @@ alias ~="cd ~"
 alias -- -="cd -"
 
 # Git
-alias g="git "
+# alias g="git "
 alias ga='git add'
 alias gc='git commit'
 alias gco="git checkout"
 alias gs="git status"
+
+# ZSH
+alias zshconfig="subl ~/.zshrc"
+alias ohmyzsh="subl ~/.oh-my-zsh"
 
 # Open any files marked as “modified” in your default editor.
 alias changed='open `git status --porcelain | sed -ne "s/^ M //p"`'
