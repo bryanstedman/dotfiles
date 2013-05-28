@@ -12,6 +12,10 @@ brews = %w{
   ruby-build
   wget
   vim
+  ffmpeg
+  brew-cask
+  gifsicle
+  imagemagick
 }
 
 puts "Before doing anything, going to update brew"
@@ -27,3 +31,8 @@ brews.each do |brew|
     puts `brew install #{brew}`
   end
 end
+
+# Dependancies for gifify function
+puts 'brew tap phinze/homebrew-cask'
+puts 'brew cask install x-quartz'
+puts 'open /usr/local/Cellar/x-quartz/2.7.4/XQuartz.pkg'
