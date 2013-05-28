@@ -4,8 +4,6 @@ alias subl='"/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"'
 # Start an HTTP server from a directory
 alias pserver='python -m SimpleHTTPServer'
 
-#!/bin/bash
-
 # bash_aliases
 
 # Allow aliases to be with sudo
@@ -49,8 +47,12 @@ alias lat="ls -AGFoth"
 # Concatenate and print content of files (add line numbers)
 alias catn="cat -n"
 
-# Fancycat™
+# `cat` with beautiful colors. requires Pygments installed.
+#  sudo easy_install Pygments
 alias c="pygmentize -O style=solarized -f console256 -g"
+
+# YSlow
+alias yslow="phantomjs ~/.dotfiles/scripts/yslow.js --disk-cache=false --info basic --format plain"
 
 # IP addresses
 alias ip='IP=`dig +short myip.opendns.com @resolver1.opendns.com`; growlnotify -s -a terminal -t "IP Address" -m "${IP}"'
