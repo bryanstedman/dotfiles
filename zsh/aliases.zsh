@@ -2,9 +2,7 @@ alias addalias='nano ~/.dotfiles/bash/bash_aliases'
 alias subl='"/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"'
 
 # Start an HTTP server from a directory
-alias pserver='python -m SimpleHTTPServer'
-
-# bash_aliases
+alias pserver='python -m SimpleHTTPServer && open http://0.0.0.0:8000/'
 
 # Allow aliases to be with sudo
 alias sudo="sudo "
@@ -23,10 +21,20 @@ alias ga='git add'
 alias gc='git commit'
 alias gco="git checkout"
 alias gs="git status"
+alias gitweb='git instaweb --httpd=webrick'
+
+#SVN
+alias svnlatest='svn log -r 1:HEAD'
 
 # ZSH
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
+alias addalias="subl ~/.dotfiles/zsh/aliases.zsh"
+
+# Bundler
+alias be='bundle exec'
+alias bx='bundle exec'
+
 
 # Open any files marked as “modified” in your default editor.
 alias changed='open `git status --porcelain | sed -ne "s/^ M //p"`'
@@ -44,12 +52,12 @@ alias la="ls -AGFoh"
 # List all except . and ..., color, mark file types, long form no use group, order by last modified, file size
 alias lat="ls -AGFoth"
 
-# Concatenate and print content of files (add line numbers)
-alias catn="cat -n"
-
 # `cat` with beautiful colors. requires Pygments installed.
 #  sudo easy_install Pygments
 alias c="pygmentize -O style=solarized -f console256 -g"
+
+# Concatenate and print content of files (add line numbers)
+alias catn="cat -n"
 
 # YSlow
 alias yslow="phantomjs ~/.dotfiles/scripts/yslow.js --disk-cache=false --info basic --format plain"
