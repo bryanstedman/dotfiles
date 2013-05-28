@@ -1,0 +1,39 @@
+[user]
+  name = Bryan Stedman
+  email = bryanbstedman@gmail.com
+
+[diff]
+  tool = vimdiff
+
+[alias]
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+  di = diff
+  unstage = reset HEAD --
+  last = log -1 HEAD
+  down = pull
+  up = push
+  in = add
+  out = rm
+  done = commit -m
+  fuckedup = reset --hard
+  with = merge
+  home = checkout master
+  this = checkout
+  wtf = status
+  what = diff
+  huh = diff
+  bah = blame
+  damnit = blame
+  eh = config --get-regexp alias
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  amend = commit --amend
+  aa = add --all
+  fa = fetch --all
+  pom = push origin master
+  b = branch
+
+[color]
+  ui = true
