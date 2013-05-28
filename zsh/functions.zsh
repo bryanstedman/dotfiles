@@ -1,6 +1,5 @@
 # Turn movie into gif
 # dependancies - https://gist.github.com/bryanstedman/5158752#file-install-sh
-
 gifify() {
   if [[ -n "$1" ]]; then
     if [[ $2 == '--good' ]]; then
@@ -15,10 +14,12 @@ gifify() {
   fi
 }
 
+# Make directory and then cd into it
 mkdircd(){
   command mkdir $1 && cd $1
 }
 
+# Default g to git status but still take other args
 g () {
   if [[ $# > 0 ]]; then
     git $@

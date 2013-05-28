@@ -1,4 +1,4 @@
-alias addalias='nano ~/.dotfiles/bash/bash_aliases'
+#Open files with Sublime Text
 alias subl='"/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"'
 
 # Start an HTTP server from a directory
