@@ -23,6 +23,9 @@ alias gco="git checkout"
 alias gs="git status"
 alias gitweb='git instaweb --httpd=webrick'
 
+# Undo a `git push`
+alias undopush="git push -f origin HEAD^:master"
+
 #SVN
 alias svnlatest='svn log -r 1:HEAD'
 
@@ -35,6 +38,11 @@ alias addalias="subl ~/.dotfiles/zsh/aliases.zsh"
 alias be='bundle exec'
 alias bx='bundle exec'
 
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
+
+# File size
+alias fs="stat -f \"%z bytes\""
 
 # Open any files marked as “modified” in your default editor.
 alias changed='open `git status --porcelain | sed -ne "s/^ M //p"`'
@@ -44,6 +52,9 @@ alias changed='open `git status --porcelain | sed -ne "s/^ M //p"`'
 # Long form no user group, color
 alias l="ls -oG"
 alias ll="ls -laoG"
+
+# List only directories
+alias lsd='ls -l | grep "^d"'
 
 # Order by last modified, long form no user group, color
 alias lt="ls -toG"
@@ -83,3 +94,8 @@ alias hidedotfiles="defaults write com.apple.finder AppleShowAllFiles -bool fals
 # Hide/show all desktop icons (useful when presenting)
 alias showdeskicons="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+
+# Stuff I never really use but cannot delete either because of http://xkcd.com/530/
+alias stfu="osascript -e 'set volume output muted true'"
+alias pumpitup="osascript -e 'set volume 10'"
+alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"

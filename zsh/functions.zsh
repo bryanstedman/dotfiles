@@ -14,9 +14,36 @@ gifify() {
   fi
 }
 
-# Make directory and then cd into it
-mkdircd(){
-  command mkdir $1 && cd $1
+# Create a new directory and enter it
+md() {
+  mkdir -p "$@" && cd "$@"
+}
+
+# cd into whatever is the forefront Finder window.
+cdf() {  # short for cdfinder
+  cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
+}
+
+# Start an HTTP server from a directory, optionally specifying the port
+server() {
+  local port="${1:-8000}"
+  open "http://localhost:${port}/"
+  # Set the default Content-Type to `text/plain` instead of `application/octet-stream`
+  # And serve everything as UTF-8 (although not technically correct, this doesn’t break anything for binary files)
+  python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
+}
+
+# git log with per-commit cmd-clickable GitHub URLs (iTerm)
+gf() {
+  local remote="$(git remote -v | awk '/^origin.*\(push\)$/ {print $2}')"
+  [[ "$remote" ]] || return
+  local user_repo="$(echo "$remote" | perl -pe 's/.*://;s/\.git$//')"
+  git log $* --name-status --color | awk "$(cat <<AWK
+    /^.*commit [0-9a-f]{40}/ {sha=substr(\$2,1,7)}
+    /^[MA]\t/ {printf "%s\thttps://github.com/$user_repo/blob/%s/%s\n", \$1, sha, \$2; next}
+    /.*/ {print \$0}
+AWK
+  )" | less -F
 }
 
 # Default g to git status but still take other args
@@ -26,4 +53,12 @@ g () {
   else
     git status
   fi
+}
+
+# get gzipped size
+gz() {
+  echo "orig size    (bytes): "
+  cat "$1" | wc -c
+  echo "gzipped size (bytes): "
+  gzip -c "$1" | wc -c
 }
