@@ -1,4 +1,4 @@
-#Open files with Sublime Text
+#Open stuff with Sublime Text
 alias subl='"/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"'
 
 # Start an HTTP server from a directory
@@ -26,12 +26,15 @@ alias gitweb='git instaweb --httpd=webrick'
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
 
+# Open any files marked as “modified” in your default editor.
+alias changed='open `git status --porcelain | sed -ne "s/^ M //p"`'
+
 #SVN
 alias svnlatest='svn log -r 1:HEAD'
 
 # ZSH
-alias zshconfig="subl ~/.zshrc"
-alias ohmyzsh="subl ~/.oh-my-zsh"
+alias zshconfig="subl ~/.dotfiles/zsh/.zshrc"
+alias ohmyzsh="subl ~/.dotfiles/zsh/.oh-my-zsh"
 alias addalias="subl ~/.dotfiles/zsh/aliases.zsh"
 
 # Bundler
@@ -44,8 +47,6 @@ alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 # File size
 alias fs="stat -f \"%z bytes\""
 
-# Open any files marked as “modified” in your default editor.
-alias changed='open `git status --porcelain | sed -ne "s/^ M //p"`'
 
 # List dir contents aliases
 

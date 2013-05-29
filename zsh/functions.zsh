@@ -1,3 +1,6 @@
+PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/Users/bstedman/Dropbox/bin
+PATH=$HOME/code/lre/tools/lre:$PATH
+
 # Turn movie into gif
 # dependancies - https://gist.github.com/bryanstedman/5158752#file-install-sh
 gifify() {
@@ -55,6 +58,11 @@ g () {
   fi
 }
 
+# SVN log for specific username
+svnuserlog() {
+  svn log | sed -n "/$1/,/-----$/ p"
+}
+
 # get gzipped size
 gz() {
   echo "orig size    (bytes): "
@@ -62,3 +70,7 @@ gz() {
   echo "gzipped size (bytes): "
   gzip -c "$1" | wc -c
 }
+
+# keep this line near the end of your bash_profile
+# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi 
+eval "$(rbenv init - zsh)"

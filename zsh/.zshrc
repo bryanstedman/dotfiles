@@ -44,7 +44,8 @@ ZSH_THEME="hipster"
 plugins=(git svn git-flow git-extras)
 
 . ~/.dotfiles/scripts/z.sh
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=/Users/bstedman/.rbenv/shims:/Users/bstedman/code/lre/tools/lre:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/Users/bstedman/Dropbox/bin
