@@ -4,7 +4,6 @@ brews = %w{
   ack
   ctags
   git
-  mercurial
   mongodb
   node
   phantomjs
