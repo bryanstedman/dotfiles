@@ -34,7 +34,7 @@ alias svnlatest='svn log -r 1:HEAD'
 
 # ZSH
 alias zshconfig="subl ~/.dotfiles/zsh/.zshrc"
-alias ohmyzsh="subl ~/.dotfiles/zsh/.oh-my-zsh"
+alias ohmyzsh="subl ~/.oh-my-zsh"
 alias addalias="subl ~/.dotfiles/zsh/aliases.zsh"
 
 # Bundler
