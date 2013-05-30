@@ -13,10 +13,10 @@ touch $dir/zsh/local.zsh
 
 echo "Symlinking ZSH"
 ln -sf $dir/zsh/.zshrc ~/.zshrc
-ln -sf $dir/zsh/aliases.zsh ~/.ohmyzsh/custom/aliases.zsh
-ln -sf $dir/zsh/functions.zsh ~/.ohmyzsh/custom/functions.zsh
-ln -sf $dir/zsh/local.zsh ~/.ohmyzsh/custom/local.zsh
-ln -sf $dir/zsh/hipster.zsh-theme ~/.ohmyzsh/themes/hipster.zsh-theme
+ln -sf $dir/zsh/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
+ln -sf $dir/zsh/functions.zsh ~/.oh-my-zsh/custom/functions.zsh
+ln -sf $dir/zsh/local.zsh ~/.oh-my-zsh/custom/local.zsh
+ln -sf $dir/zsh/hipster.zsh-theme ~/.oh-my-zsh/themes/hipster.zsh-theme
 
 #git
 echo "Symlinking git"
