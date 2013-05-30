@@ -10,6 +10,12 @@ echo "Symlinking"
 #zsh
 echo "Creating local alias file"
 touch $dir/zsh/local.zsh
+touch ~/.oh-my-zsh/custom/aliases.zsh
+touch ~/.oh-my-zsh/custom/functions.zsh
+touch ~/.oh-my-zsh/themes/hipster.zsh-theme
+touch ~/.gitconfig
+touch ~/.gitignore_global
+
 
 echo "Symlinking ZSH"
 ln -sf $dir/zsh/.zshrc ~/.zshrc
