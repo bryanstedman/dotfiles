@@ -4,18 +4,21 @@ echo "Brewing"
 ruby $dir/scripts/brewery.rb
 
 echo "~~~~~~~~~~~~~~~~~"
+echo "Installing Oh My Zsh"
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+
+echo "~~~~~~~~~~~~~~~~~"
 echo "Symlinking"
 
 #symlinks
 #zsh
-echo "Creating local alias file"
+echo "Creating local files"
 touch $dir/zsh/local.zsh
 touch ~/.oh-my-zsh/custom/aliases.zsh
 touch ~/.oh-my-zsh/custom/functions.zsh
 touch ~/.oh-my-zsh/themes/hipster.zsh-theme
 touch ~/.gitconfig
 touch ~/.gitignore_global
-
 
 echo "Symlinking ZSH"
 ln -sf $dir/zsh/.zshrc ~/.zshrc
