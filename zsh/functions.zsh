@@ -1,8 +1,8 @@
-PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/Users/bstedman/Dropbox/bin
-PATH=$HOME/code/lre/tools/lre:$PATH
+# PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/Users/bstedman/Dropbox/bin
+# PATH=$HOME/code/lre/tools/lre:$PATH
 
-# Turn movie into gif
-# dependancies - https://gist.github.com/bryanstedman/5158752#file-install-sh
+# # Turn movie into gif
+# # dependancies - https://gist.github.com/bryanstedman/5158752#file-install-sh
 gifify() {
   if [[ -n "$1" ]]; then
     if [[ $2 == '--good' ]]; then
@@ -17,17 +17,17 @@ gifify() {
   fi
 }
 
-# Create a new directory and enter it
-md() {
-  mkdir -p "$@" && cd "$@"
+# # Create a new directory and enter it
+mkcd() {
+  mkdir $1 && cd $1
 }
 
-# cd into whatever is the forefront Finder window.
+# # cd into whatever is the forefront Finder window.
 cdf() {  # short for cdfinder
   cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
 }
 
-# Start an HTTP server from a directory, optionally specifying the port
+# # Start an HTTP server from a directory, optionally specifying the port
 server() {
   local port="${1:-8000}"
   open "http://localhost:${port}/"
@@ -36,8 +36,8 @@ server() {
   python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
 }
 
-# Default g to git status but still take other args
-g () {
+# # Default g to git status but still take other args
+function g () {
   if [[ $# > 0 ]]; then
     git $@
   else
@@ -45,8 +45,8 @@ g () {
   fi
 }
 
-# Create a data URI from a file and copy it to the pasteboard
-datauri() {
+# # Create a data URI from a file and copy it to the pasteboard
+function datauri() {
     local mimeType=$(file -b --mime-type "$1")
     if [[ $mimeType == text/* ]]; then
         mimeType="${mimeType};charset=utf-8"
@@ -54,19 +54,19 @@ datauri() {
     printf "data:${mimeType};base64,$(openssl base64 -in "$1" | tr -d '\n')" | pbcopy | printf "=> data URI copied to pasteboard.\n"
 }
 
-# SVN log for specific username
+# # SVN log for specific username
 svnuserlog() {
   svn log | sed -n "/$1/,/-----$/ p"
 }
 
-# get gzipped size
-gz() {
+# # get gzipped size
+function gz() {
   echo "orig size    (bytes): "
   cat "$1" | wc -c
   echo "gzipped size (bytes): "
   gzip -c "$1" | wc -c
 }
 
-# keep this line near the end of your bash_profile
-# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi 
+# # keep this line near the end of your bash_profile
+# # if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi 
 eval "$(rbenv init - zsh)"
