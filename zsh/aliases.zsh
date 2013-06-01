@@ -37,6 +37,7 @@ alias zshconfig="subl ~/.dotfiles/zsh/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 alias addalias="subl ~/.dotfiles/zsh/aliases.zsh"
 alias addlocalalias="subl ~/.dotfiles/zsh/local.zsh"
+alias updatedotfiles="cd ~/.dotfiles && git pull"
 
 # Bundler
 alias be='bundle exec'

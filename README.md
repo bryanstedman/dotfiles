@@ -9,6 +9,9 @@ My OS X dotfiles. Most of these are stolen from other people.
 * run install script (`./scripts/install.sh`)  
 * if you have a permission issue than make sure the script is executable (`chmod +x scripts/install.sh`)
 
+## Updating
+You can check for updates by simply running a git pull from your ~/.dotfiles directory. Alternatively, you can use the included alias `updatedotfiles`
+
 ## Requirements
 These dotfiles assume that you have Ruby, Git and Homebrew installed. Also the zsh files require [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh), but the install script will get that installed for you.
 
