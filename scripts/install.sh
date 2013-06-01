@@ -1,6 +1,14 @@
 dir=$(pwd) # dotfiles directory
 
 echo "Brewing"
+
+if test ! $(which brew)
+then
+  echo "  x You'll need to install Homebrew first:"
+  echo "    https://github.com/mxcl/homebrew/wiki/installation"
+  exit
+fi
+
 ruby $dir/scripts/brewery.rb
 
 echo "~~~~~~~~~~~~~~~~~"
