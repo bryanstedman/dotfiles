@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 
+puts "Tapping homebrew-cask..."
+puts 'brew tap phinze/homebrew-cask'
+
 brews = %w{
   ack
   ctags
@@ -32,6 +35,5 @@ brews.each do |brew|
 end
 
 # Dependancies for gifify function
-puts 'brew tap phinze/homebrew-cask'
 puts 'brew cask install x-quartz'
 puts 'open /usr/local/Cellar/x-quartz/2.7.4/XQuartz.pkg'
