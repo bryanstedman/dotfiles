@@ -36,6 +36,9 @@ alias svnlatest='svn log -r 1:HEAD'
 alias zshconfig="subl ~/.dotfiles/zsh/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 alias addalias="subl ~/.dotfiles/zsh/aliases.zsh"
+
+# Dotfiles
+alias editdotfiles="subl ~/.dotfiles"
 alias addlocalalias="subl ~/.dotfiles/zsh/local.zsh"
 alias updatedotfiles="cd ~/.dotfiles && git pull"
 
