@@ -22,6 +22,7 @@ apps = %w{
   bartender
   things
   scrivener
+  rdio
 }
 
 puts 'brew cask install alfred'
