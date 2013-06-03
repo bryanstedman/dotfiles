@@ -22,6 +22,7 @@ apps = %w{
   bartender
   things
   scrivener
+  lime-chat
   rdio
 }
 
