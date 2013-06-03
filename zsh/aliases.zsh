@@ -15,6 +15,9 @@ alias ...="cd ../.."
 alias ~="cd ~"
 alias -- -="cd -"
 
+# Shortcuts
+alias cl="clear"
+
 # Git
 # alias g="git "
 alias ga='git add'
