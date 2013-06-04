@@ -21,6 +21,7 @@ alias cl="clear"
 # Git
 # alias g="git "
 alias ga='git add'
+alias gadd='git add -u .'
 alias gc='git commit'
 alias gco="git checkout"
 alias gs="git status"
