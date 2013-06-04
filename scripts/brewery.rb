@@ -16,6 +16,7 @@ brews = %w{
   vim
   ffmpeg
   brew-cask
+  tig
   gifsicle
   imagemagick
 }
