@@ -7,6 +7,7 @@ brews = %w{
   ack
   ctags
   git
+  git-extras
   mongodb
   node
   phantomjs
