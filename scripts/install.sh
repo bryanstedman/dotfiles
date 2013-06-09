@@ -12,10 +12,16 @@ fi
 ruby $dir/scripts/brewery.rb
 
 echo "~~~~~~~~~~~~~~~~~"
+
 echo "Installing Oh My Zsh"
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-
 echo "~~~~~~~~~~~~~~~~~"
+
+echo "Setting up npm"
+ruby $dir/scripts/npm_bundles.rb $1
+echo "~~~~~~~~~~~~~~~~~"
+
+
 echo "Symlinking"
 
 #symlinks
@@ -34,6 +40,7 @@ ln -sf $dir/zsh/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
 ln -sf $dir/zsh/functions.zsh ~/.oh-my-zsh/custom/functions.zsh
 ln -sf $dir/zsh/local.zsh ~/.oh-my-zsh/custom/local.zsh
 ln -sf $dir/zsh/hipster.zsh-theme ~/.oh-my-zsh/themes/hipster.zsh-theme
+echo "~~~~~~~~~~~~~~~~~"
 
 #git
 echo "Symlinking git"
