@@ -20,6 +20,7 @@ brews = %w{
   tig
   gifsicle
   imagemagick
+  heroku-toolbelt
 }
 
 puts "Before doing anything, going to update brew"
