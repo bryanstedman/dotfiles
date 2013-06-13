@@ -27,6 +27,7 @@ alias gco="git checkout"
 alias gs="git status"
 alias gitweb='git instaweb --httpd=webrick'
 alias commits='git reflog'
+alias gitreset='git checkout .'
 
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
