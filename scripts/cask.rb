@@ -39,4 +39,4 @@ apps.each do |app|
 end
 
 # Tell Alfred about cask apps straight away
-puts 'brew cask alfred'
+puts 'brew cask alfred link'
