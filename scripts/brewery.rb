@@ -8,6 +8,7 @@ brews = %w{
   ctags
   git
   git-extras
+  git-flow
   mongodb
   node
   phantomjs
