@@ -24,6 +24,7 @@ apps = %w{
   scrivener
   lime-chat
   rdio
+  shortcat
 }
 
 puts 'brew cask install alfred'
