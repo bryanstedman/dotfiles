@@ -25,6 +25,8 @@ apps = %w{
   lime-chat
   rdio
   shortcat
+  sequel-pro
+  clean-my-mac
 }
 
 puts 'brew cask install alfred'
