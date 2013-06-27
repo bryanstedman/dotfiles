@@ -5,6 +5,7 @@ puts 'brew tap phinze/homebrew-cask'
 
 brews = %w{
   ack
+  bar
   ctags
   git
   git-extras
