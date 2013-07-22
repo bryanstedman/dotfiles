@@ -67,6 +67,11 @@ function gz() {
   gzip -c "$1" | wc -c
 }
 
+# Display Folder contents tree
+tree () {
+  find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
+}
+
 # # keep this line near the end of your bash_profile
 # # if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi 
 eval "$(rbenv init - zsh)"
