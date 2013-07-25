@@ -27,6 +27,7 @@ apps = %w{
   shortcat
   sequel-pro
   clean-my-mac
+  spectacle
 }
 
 puts 'brew cask install alfred'
