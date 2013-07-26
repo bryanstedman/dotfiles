@@ -25,6 +25,7 @@ alias gadd='git add -u .'
 alias gc='git commit'
 alias gco="git checkout"
 alias gs="git status"
+alias gss="git status --short"
 alias gitweb='git instaweb --httpd=webrick'
 alias commits='git reflog'
 alias gitreset='git checkout .'
