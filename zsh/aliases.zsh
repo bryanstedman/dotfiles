@@ -108,6 +108,10 @@ alias hidedotfiles="defaults write com.apple.finder AppleShowAllFiles -bool fals
 alias showdeskicons="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 
+# Disable/Enable Dashboard
+alias diabledashboard="defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock"
+alias enabledashboard="defaults write com.apple.dashboard mcx-disabled -boolean NO && killall Dock"
+
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 10'"
