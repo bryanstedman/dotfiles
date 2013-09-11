@@ -109,7 +109,7 @@ alias showdeskicons="defaults write com.apple.finder CreateDesktop -bool true &&
 alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 
 # Disable/Enable Dashboard
-alias diabledashboard="defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock"
+alias disabledashboard="defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock"
 alias enabledashboard="defaults write com.apple.dashboard mcx-disabled -boolean NO && killall Dock"
 
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
