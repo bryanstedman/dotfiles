@@ -52,3 +52,6 @@ export PATH=/Users/bryanstedman/.rbenv/shims:/Users/bryanstedman/code/lre/tools/
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# Specify your defaults in this environment variable
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
