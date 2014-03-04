@@ -7,27 +7,34 @@ puts 'brew install brew-cask'
 
 apps = %w{
   alfred
-  google-chrome
-  google-chrome-canary
-  firefox
-  opera
-  iterm2
-  sublime-text
-  github
+  bartender
+  cheat-sheet
+  chocolat
+  clean-my-mac
   codekit
   dropbox
   fantastical
-  vlc
-  spotify
-  bartender
-  things
-  scrivener
+  filezilla
+  firefox
+  github
+  google-chrome
+  google-chrome-canary
+  handbrake
+  hip-chat
+  iterm2
+  keyboard-maestro
   lime-chat
-  rdio
-  shortcat
+  mamp
+  opera
+  scrivener
   sequel-pro
-  clean-my-mac
+  shortcat
   spectacle
+  spotify
+  sublime-text
+  textexpander
+  things
+  vlc
 }
 
 puts 'brew cask install alfred'
