@@ -6,23 +6,24 @@ puts 'brew tap phinze/homebrew-cask'
 brews = %w{
   ack
   bar
+  brew-cask
   ctags
+  gifsicle
   git
   git-extras
   git-flow
+  ffmpeg
+  heroku-toolbelt
+  imagemagick
   mongodb
+  mysql
   node
   phantomjs
   rbenv
   ruby-build
-  wget
-  vim
-  ffmpeg
-  brew-cask
   tig
-  gifsicle
-  imagemagick
-  heroku-toolbelt
+  vim
+  wget
 }
 
 puts "Before doing anything, going to update brew"
