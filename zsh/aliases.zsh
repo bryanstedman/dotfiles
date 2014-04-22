@@ -45,7 +45,7 @@ alias ohmyzsh="subl ~/.oh-my-zsh"
 alias addalias="subl ~/.dotfiles/zsh/aliases.zsh"
 
 # Dotfiles
-alias editdotfiles="subl ~/.dotfiles"
+alias editdotfiles="atom ~/.dotfiles"
 alias addlocalalias="subl ~/.dotfiles/zsh/local.zsh"
 alias updatedotfiles="cd ~/.dotfiles && git pull"
 
