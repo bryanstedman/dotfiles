@@ -8,8 +8,8 @@ puts 'brew install brew-cask'
 apps = %w{
   alfred
   bartender
+  bettertouchtool
   cheat-sheet
-  chocolat
   clean-my-mac
   codekit
   dropbox
@@ -21,10 +21,11 @@ apps = %w{
   google-chrome-canary
   handbrake
   hip-chat
+  instacast
   iterm2
-  keyboard-maestro
   lime-chat
   mamp
+  nvalt
   opera
   scrivener
   sequel-pro
@@ -34,6 +35,7 @@ apps = %w{
   sublime-text
   textexpander
   things
+  torbrowserbundle
   vlc
 }
 
