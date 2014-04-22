@@ -12,6 +12,7 @@
   st = status
   di = diff
   unstage = reset HEAD --
+  undo-commit = reset --soft HEAD^
   last = log -1 HEAD
   down = pull
   up = push
