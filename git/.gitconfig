@@ -6,11 +6,13 @@
   tool = vimdiff
 
 [alias]
-  co = checkout
+  aa = add --all
+  b = branch
   br = branch
   ci = commit
-  st = status
+  co = checkout
   di = diff
+  st = status
   unstage = reset HEAD --
   undo-commit = reset --soft HEAD^
   last = log -1 HEAD
@@ -31,10 +33,8 @@
   eh = config --get-regexp alias
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
   amend = commit --amend
-  aa = add --all
   fa = fetch --all
   pom = push origin master
-  b = branch
 
 [color]
   ui = true
