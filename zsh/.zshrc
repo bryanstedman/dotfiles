@@ -48,7 +48,7 @@ plugins=(bower git git-flow git-extras npm sublime svn vi-mode)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/bryanstedman/.rbenv/shims:/Users/bryanstedman/code/lre/tools/lre:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/Users/bryanstedman/Dropbox/bin
+export PATH=/Users/bryanstedman/.rbenv/shims:/Users/bryanstedman/code/lre-tools/utilities:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/Users/bryanstedman/Dropbox/bin
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
