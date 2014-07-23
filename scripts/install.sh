@@ -46,6 +46,22 @@ echo "~~~~~~~~~~~~~~~~~"
 echo "Symlinking git"
 ln -sf $dir/git/.gitconfig ~/.gitconfig
 ln -sf $dir/git/.gitignore_global ~/.gitignore_global
+echo "~~~~~~~~~~~~~~~~~"
+
+# Atom Editor settings
+echo "Symlinking atom editor settings"
+touch ~/.atom/config.cson
+touch ~/.atom/init.coffee
+touch ~/.atom/keymap.cson
+touch ~/.atom/snippets.cson
+touch ~/.atom/styles.less
+
+ln -sf $dir/atom/config.cson ~/.atom/config.cson
+ln -sf $dir/atom/init.coffee ~/.atom/init.coffee
+ln -sf $dir/atom/keymap.cson ~/.atom/keymap.cson
+ln -sf $dir/atom/snippets.cson ~/.atom/snippets.cson
+ln -sf $dir/atom/styles.less ~/.atom/styles.less
+
 
 echo "~~~~~~~~~~~~~~~~~"
 echo "All done"

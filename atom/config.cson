@@ -1,0 +1,23 @@
+'exception-reporting':
+  'userId': 'cff21abc-de9f-0844-faa2-f2299abf1785'
+'release-notes':
+  'viewedVersion': '0.89.0'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': '0f64de591a8851ec17f92e91340b70d43dcec51d'
+'editor': {}
+'core':
+  'themes': [
+    'atom-light-ui'
+    'solarized-dark-syntax'
+  ]
+  'ignoredNames': [
+    '.git'
+    '.svn'
+    '.DS_Store'
+  ]
+  'disabledPackages': [
+    'language-java'
+  ]
+'tree-view': {}

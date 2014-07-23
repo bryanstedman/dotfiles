@@ -7,6 +7,7 @@ puts 'brew install brew-cask'
 
 apps = %w{
   alfred
+  atom
   bartender
   bettertouchtool
   cheat-sheet
