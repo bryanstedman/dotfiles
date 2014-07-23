@@ -16,6 +16,6 @@ You can check for updates by simply running a git pull from your ~/.dotfiles dir
 These dotfiles assume that you have Ruby, Git and Homebrew installed. Also the zsh files require [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh), but the install script will get that installed for you.
 
 ## Customizing
-These files provide a local.zsh file in the zsh folder for your own aliases and functions or peices that are specific to one machine.  
+These files provide a local.zsh file in the zsh folder for your own aliases and functions or pieces that are specific to one machine.  
 
 You will also want to update git/.gitconfig with your name and email rather than mine
