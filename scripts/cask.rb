@@ -11,7 +11,6 @@ apps = %w{
   bartender
   bettertouchtool
   cheat-sheet
-  clean-my-mac
   codekit
   dropbox
   fantastical
