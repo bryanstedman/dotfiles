@@ -41,11 +41,15 @@ ZSH_THEME="hipster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(bower git git-flow git-extras npm sublime svn vi-mode)
+plugins=(atom bower git git-flow git-extras npm svn vi-mode)
 
 . ~/.dotfiles/scripts/z.sh
 
 source $ZSH/oh-my-zsh.sh
+
+# Set ATOM as default editor atom.io
+export EDITOR=/usr/local/bin/atom
+export VISUAL=/usr/local/bin/atom
 
 # Customize to your needs...
 export PATH=/Users/bryanstedman/.rbenv/shims:/Users/bryanstedman/code/lre-tools/utilities:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/Users/bryanstedman/Dropbox/bin
