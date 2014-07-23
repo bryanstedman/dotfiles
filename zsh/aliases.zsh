@@ -24,8 +24,10 @@ alias ga='git add'
 alias gadd='git add -u .'
 alias gc='git commit'
 alias gco="git checkout"
+alias gl="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
 alias gs="git status --short"
 alias gss="git status"
+alias gsb="git status -sb"
 alias gitweb='git instaweb --httpd=webrick'
 alias commits='git reflog'
 alias gitreset='git checkout .'
