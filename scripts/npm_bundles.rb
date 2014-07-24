@@ -8,8 +8,8 @@ if `which n` == "" || REINSTALL_ALL
 end
 
 # n stable currently breaks, so hard coded for now
-# puts `n stable`
-`n 0.10.9`
+puts `n stable`
+# `n 0.10.29`
 
 puts "Running Node version: #{`node --version`}"
 
@@ -19,7 +19,8 @@ npms = {
   # leave command blank if they are the same
   "bower" => "",
   "grunt-cli" => "grunt",
-  "express" => ""
+  "express" => "",
+  "gulp" => ""
 }
 
 npms.each do |mod, command|
