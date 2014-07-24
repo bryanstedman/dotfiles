@@ -1,11 +1,12 @@
 dir=$(pwd) # dotfiles directory
 
 echo "Brewing"
-
 if test ! $(which brew)
 then
   echo "  x You'll need to install Homebrew first:"
-  echo "    https://github.com/mxcl/homebrew/wiki/installation"
+  # echo "    https://github.com/mxcl/homebrew/wiki/installation
+  echo " Installing Homebrew"
+  ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
   exit
 fi
 
