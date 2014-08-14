@@ -7,34 +7,35 @@
 
 [alias]
   aa = add --all
+  amend = commit --amend
   b = branch
+  bah = blame
   br = branch
   ci = commit
   co = checkout
-  di = diff
-  st = status
-  unstage = reset HEAD --
-  undo-commit = reset --soft HEAD^
-  last = log -1 HEAD
-  down = pull
-  up = push
-  in = add
-  out = rm
-  done = commit -m
-  fuckedup = reset --hard
-  with = merge
-  home = checkout master
-  this = checkout
-  wtf = status
-  what = diff
-  huh = diff
-  bah = blame
   damnit = blame
+  di = diff
+  done = commit -m
+  down = pull
   eh = config --get-regexp alias
-  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-  amend = commit --amend
   fa = fetch --all
+  find = "!grepalias() { git config --global --get-regexp alias | grep -i \"$1\" | awk -v nr=2 '{sub(/^alias\\./,\"\")};{printf \"\\033[31m%_10s\\033[1;37m\", $1};{sep=FS};{for (x=nr; x<=NF; x++) {printf \"%s%s\", sep, $x; }; print \"\\033[0;39m\"}'; }; grepalias"
+  fuckedup = reset --hard
+  home = checkout master
+  huh = diff
+  in = add
+  last = log -1 HEAD
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  out = rm
   pom = push origin master
+  st = status
+  this = checkout
+  undo-commit = reset --soft HEAD^
+  unstage = reset HEAD --
+  up = push
+  what = diff
+  with = merge
+  wtf = status
 
 [color]
   ui = true
