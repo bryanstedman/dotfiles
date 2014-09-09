@@ -10,29 +10,28 @@ apps = %w{
   atom
   bartender
   bettertouchtool
-  cheat-sheet
   codekit
+  crashplan
   dropbox
   fantastical
   filezilla
   firefox
   github
   google-chrome
-  google-chrome-canary
-  handbrake
+  hazel
   hip-chat
-  instacast
   iterm2
   lime-chat
   mamp
   nvalt
+  onepassword
+  opendns-updater
   opera
   scrivener
   sequel-pro
   shortcat
   spectacle
   spotify
-  sublime-text
   textexpander
   things
   torbrowserbundle
