@@ -12,6 +12,9 @@ fi
 
 ruby $dir/scripts/brewery.rb
 
+echo "Installing brew cask applications"
+ruby $dir/scripts/cask.rb
+
 echo "~~~~~~~~~~~~~~~~~"
 
 echo "Installing Oh My Zsh"
