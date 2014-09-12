@@ -36,6 +36,7 @@ apps = %w{
   things
   torbrowserbundle
   vlc
+  xquartz
 }
 
 puts 'brew cask install alfred'

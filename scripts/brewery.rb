@@ -39,7 +39,3 @@ brews.each do |brew|
     puts `brew install #{brew}`
   end
 end
-
-# Dependancies for gifify function
-puts 'brew cask install x-quartz'
-puts 'open /usr/local/Cellar/x-quartz/2.7.4/XQuartz.pkg'
