@@ -13,7 +13,7 @@ My OS X dotfiles. Most of these are stolen from other people.
 You can check for updates by simply running a git pull from your ~/.dotfiles directory. Alternatively, you can use the included alias `updatedotfiles`
 
 ## Requirements
-These dotfiles assume that you have Ruby, Git and Homebrew installed. Also the zsh files require [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh), but the install script will get that installed for you.
+These dotfiles assume that you have Ruby and Git installed. [Homebrew](http://brew.sh/) and [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) are also necessary, but the install script will get those installed for you.
 
 ## Customizing
 These files provide a local.zsh file in the zsh folder for your own aliases and functions or pieces that are specific to one machine.  
