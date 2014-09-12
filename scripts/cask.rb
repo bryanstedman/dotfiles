@@ -29,12 +29,14 @@ apps = %w{
   nvalt
   opendns-updater
   opera
+  scansnap-manager
   scrivener
   sequel-pro
   shortcat
   sketch
   spectacle
   spotify
+  superduper
   textexpander
   things
   titanium-studio
