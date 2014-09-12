@@ -54,7 +54,7 @@ export VISUAL=/usr/local/bin/atom
 # Customize to your needs...
 export PATH=/Users/bryanstedman/.rbenv/shims:/Users/bryanstedman/code/lre-tools/utilities:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/Users/bryanstedman/Dropbox/bin
 
-### Added by the Heroku Toolbelt
+# Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # Specify your defaults in this environment variable
