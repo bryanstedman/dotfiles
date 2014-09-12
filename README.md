@@ -4,6 +4,13 @@ Bryan's dotfiles
 My OS X dotfiles. Most of these are stolen from other people.
 
 ## Installing
+
+### Automatic Installation
+You can install everything via `curl`:  
+`$ curl -L http://bryanstedman.github.io/dotfiles/install.sh | sh`
+
+### Manual Installation
+If you'd prefer to install things manually:
 * Clone this repo to ~/.dotfiles (`cd ~ && git clone https://github.com/bryanstedman/dotfiles.git .dotfiles`)  
 * cd into this folder (`cd .dotfiles`)  
 * run install script (`./scripts/install.sh`)  
