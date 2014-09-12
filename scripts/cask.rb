@@ -19,7 +19,7 @@ apps = %w{
   github
   google-chrome
   hazel
-  hip-chat
+  hipchat
   iterm2
   lime-chat
   mamp
