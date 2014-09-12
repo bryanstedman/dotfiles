@@ -42,13 +42,13 @@ alias changed='open `git status --porcelain | sed -ne "s/^ M //p"`'
 alias svnlatest='svn log -r 1:HEAD'
 
 # ZSH
-alias zshconfig="subl ~/.dotfiles/zsh/.zshrc"
-alias ohmyzsh="subl ~/.oh-my-zsh"
-alias addalias="subl ~/.dotfiles/zsh/aliases.zsh"
+alias zshconfig="atom ~/.dotfiles/zsh/.zshrc"
+alias ohmyzsh="atom ~/.oh-my-zsh"
+alias addalias="atom ~/.dotfiles/zsh/aliases.zsh"
 
 # Dotfiles
 alias editdotfiles="atom ~/.dotfiles"
-alias addlocalalias="subl ~/.dotfiles/zsh/local.zsh"
+alias addlocalalias="atom ~/.dotfiles/zsh/local.zsh"
 alias updatedotfiles="cd ~/.dotfiles && git pull"
 
 # Bundler
