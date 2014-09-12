@@ -16,17 +16,6 @@ else
     exit
   fi
 
-  if test ! $(which git)
-  then
-    echo "Installing Git"
-    brew install git
-    exit
-  fi
-
-  echo "Cloning dotfiles repo"
-  git clone https://github.com/bryanstedman/dotfiles.git $dir/.dotfiles
-
-
   echo "Brewing"
   ruby $dir/scripts/brewery.rb
 
