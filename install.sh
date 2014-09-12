@@ -39,6 +39,10 @@ else
   curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
   echo "~~~~~~~~~~~~~~~~~"
 
+  echo "Applying OSX settings"
+  $dir/osx/.osx
+  echo "~~~~~~~~~~~~~~~~~"
+
   echo "Setting up npm"
   ruby $dir/scripts/npm_bundles.rb $1
   echo "~~~~~~~~~~~~~~~~~"
