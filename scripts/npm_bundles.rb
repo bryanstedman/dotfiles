@@ -19,7 +19,8 @@ npms = {
   # leave command blank if they are the same
   "bower" => "",
   "grunt-cli" => "grunt",
-  "gulp" => ""
+  "gulp" => "",
+  "slap" => ""
 }
 
 npms.each do |mod, command|
