@@ -1,6 +1,7 @@
+cd ~
+
 dir=$(pwd) # dotfiles directory
 
-echo "Brewing"
 if test ! $(which brew)
 then
   echo "  x You'll need to install Homebrew first:"
@@ -10,6 +11,18 @@ then
   exit
 fi
 
+if test ! $(which git)
+then
+  echo "Installing Git"
+  brew install git
+  exit
+fi
+
+echo "Cloning dotfiles repo"
+git clone https://github.com/bryanstedman/dotfiles.git $dir/.dotfiles
+
+
+echo "Brewing"
 ruby $dir/scripts/brewery.rb
 
 echo "Installing brew cask applications"
