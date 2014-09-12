@@ -34,7 +34,7 @@ apps = %w{
   spotify
   textexpander
   things
-  torbrowserbundle
+  torbrowser
   vlc
   xquartz
 }
