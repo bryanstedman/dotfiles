@@ -21,7 +21,7 @@ apps = %w{
   hazel
   hipchat
   iterm2
-  lime-chat
+  limechat
   mamp
   nvalt
   onepassword
