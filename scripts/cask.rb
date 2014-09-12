@@ -14,7 +14,6 @@ apps = %w{
   crashplan
   dropbox
   fantastical
-  filezilla
   firefox
   github
   google-chrome
@@ -24,7 +23,6 @@ apps = %w{
   limechat
   mamp
   nvalt
-  onepassword
   opendns-updater
   opera
   scrivener
