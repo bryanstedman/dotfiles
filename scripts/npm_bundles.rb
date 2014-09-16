@@ -20,6 +20,7 @@ npms = {
   "bower" => "",
   "grunt-cli" => "grunt",
   "gulp" => "",
+  "is-up" => "",
   "slap" => ""
 }
 
