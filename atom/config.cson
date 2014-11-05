@@ -25,5 +25,3 @@
       'jsformat'
     ]
     'excludeVcsIgnoredPaths': false
-  'tree-view':
-    'hideVcsIgnoredFiles': false
