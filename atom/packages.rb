@@ -3,10 +3,11 @@ puts '~~~~~~~~~~~~~~~~~'
 
 packages = %w{
   emmet
+  dash
   fancy-new-file
   merge-conflicts
   tasks
-  valign
+  valign  
 }
 
 packages.each do |package|
