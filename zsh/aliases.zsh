@@ -1,3 +1,5 @@
+CURRENT_EDITOR="subl"
+
 #Open stuff with Sublime Text
 alias subl='"/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"'
 
@@ -47,8 +49,8 @@ alias ohmyzsh="atom ~/.oh-my-zsh"
 alias addalias="atom ~/.dotfiles/zsh/aliases.zsh"
 
 # Dotfiles
-alias editdotfiles="atom ~/.dotfiles"
-alias addlocalalias="atom ~/.dotfiles/zsh/local.zsh"
+alias editdotfiles="$CURRENT_EDITOR ~/.dotfiles"
+alias addlocalalias="$CURRENT_EDITOR ~/.dotfiles/zsh/local.zsh"
 alias updatedotfiles="cd ~/.dotfiles && git pull"
 
 # Bundler
