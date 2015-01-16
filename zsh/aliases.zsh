@@ -35,6 +35,10 @@ alias gitweb='git instaweb --httpd=webrick'
 alias commits='git reflog'
 alias gitreset='git checkout .'
 
+# Commands starting with % for pasting from web
+alias %=' '
+alias $=' '
+
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
 
