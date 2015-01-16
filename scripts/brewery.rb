@@ -22,6 +22,7 @@ brews = %w{
   rbenv
   ruby-build
   tig
+  tree
   vim
   wget
 }
