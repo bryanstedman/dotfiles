@@ -59,6 +59,9 @@ alias editdotfiles="$CURRENT_EDITOR ~/.dotfiles"
 alias addlocalalias="$CURRENT_EDITOR ~/.dotfiles/zsh/local.zsh"
 alias updatedotfiles="cd ~/.dotfiles && git pull"
 
+# Check Clipboard
+alias cbp="pbpaste|less"
+
 # Bundler
 alias be='bundle exec'
 alias bx='bundle exec'
