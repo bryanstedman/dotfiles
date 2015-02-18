@@ -1,4 +1,4 @@
-CURRENT_EDITOR="subl"
+CURRENT_EDITOR="atom"
 
 #Open stuff with Sublime Text
 alias subl='"/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"'
