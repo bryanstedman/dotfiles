@@ -8,7 +8,8 @@ alias pserver='python -m SimpleHTTPServer && open http://0.0.0.0:8000/'
 
 # Allow aliases to be with sudo
 alias sudo="sudo "
-alias please="sudo "
+alias please="sudo"
+alias fucking="sudo"
 alias !!!="sudo !!"
 
 # Easier navigation: .., ..., ~ and -
