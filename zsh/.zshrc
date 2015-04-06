@@ -41,7 +41,7 @@ ZSH_THEME="hipster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(atom bower git git-flow git-extras npm svn)
+plugins=(atom bower git git-flow git-extras npm svn zsh-syntax-highlighting)
 
 . ~/.dotfiles/scripts/z.sh
 
