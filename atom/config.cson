@@ -1,27 +1,40 @@
-'global':
-  'exception-reporting':
-    'userId': 'cff21abc-de9f-0844-faa2-f2299abf1785'
-  'release-notes':
-    'viewedVersion': '0.89.0'
-  'welcome':
-    'showOnStartup': false
-  'metrics':
-    'userId': '0f64de591a8851ec17f92e91340b70d43dcec51d'
-  'editor':
-    'fontSize': 18
-    'invisibles': {}
-  'core':
-    'themes': [
-      'atom-light-ui'
-      'solarized-dark-syntax'
+"*":
+  "exception-reporting":
+    userId: "cff21abc-de9f-0844-faa2-f2299abf1785"
+  "release-notes":
+    viewedVersion: "0.89.0"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "0f64de591a8851ec17f92e91340b70d43dcec51d"
+  editor:
+    invisibles:
+      {}
+    fontSize: 18
+    showInvisibles: true
+  core:
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
     ]
-    'ignoredNames': [
-      '.git'
-      '.svn'
-      '.DS_Store'
+    disabledPackages: [
+      "language-java"
+      "git-control"
+      "notebook"
+      "jsformat"
     ]
-    'disabledPackages': [
-      'language-java'
-      'jsformat'
+    themes: [
+      "one-light-ui"
+      "solarized-dark-syntax"
     ]
-    'excludeVcsIgnoredPaths': false
+    excludeVcsIgnoredPaths: false
+    projectHome: "/Users/bryanstedman/code"
+  "linter-jshint":
+    jshintExecutablePath: "/usr/local/bin/jshint"
+  linter:
+    {}
+  "git-diff":
+    {}
+  "tree-view":
+    hideIgnoredNames: true
