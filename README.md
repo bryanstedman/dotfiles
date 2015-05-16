@@ -21,7 +21,7 @@ You can check for updates by simply running a git pull from your ~/.dotfiles dir
 
 ## Requirements
 These dotfiles assume that you have Ruby installed.
-Git, [Homebrew](http://brew.sh/) and [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) are also necessary, but the install script will get those installed for you.
+Git, [Homebrew](http://brew.sh/) and [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) are also necessary, but the install script will get those installed for you if needed.
 
 ## Customizing
 These files provide a local.zsh file in the zsh folder for your own aliases and functions or pieces that are specific to one machine.  
