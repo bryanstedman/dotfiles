@@ -20,6 +20,6 @@
 'body':
   'alt-a': 'valign:align'
   'alt-s': 'sort-lines:sort'
-'.editor':
+'.atom-text-editor':
   'cmd-left':  'pane:show-previous-item'
   'cmd-right': 'pane:show-next-item'
