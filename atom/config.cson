@@ -8,8 +8,7 @@
   metrics:
     userId: "0f64de591a8851ec17f92e91340b70d43dcec51d"
   editor:
-    invisibles:
-      {}
+    invisibles: {}
     fontSize: 18
     showInvisibles: true
   core:
@@ -31,10 +30,8 @@
     projectHome: "/Users/bryanstedman/code"
   "linter-jshint":
     jshintExecutablePath: "/usr/local/bin/jshint"
-  linter:
-    {}
-  "git-diff":
-    {}
+  linter: {}
+  "git-diff": {}
   "tree-view":
     hideIgnoredNames: true
   jsformat:
