@@ -5,6 +5,9 @@
 [diff]
   tool = vimdiff
 
+[core]
+  editor = vim
+
 [alias]
   aa = add --all
   amend = commit --amend
