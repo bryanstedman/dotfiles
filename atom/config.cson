@@ -9,7 +9,7 @@
     userId: "0f64de591a8851ec17f92e91340b70d43dcec51d"
   editor:
     invisibles: {}
-    fontSize: 18
+    fontSize: 16
     showInvisibles: true
   core:
     ignoredNames: [
@@ -21,18 +21,39 @@
       "language-java"
       "git-control"
       "notebook"
+      "jshint"
     ]
+    excludeVcsIgnoredPaths: false
+    projectHome: "/Users/bryanstedman/code"
     themes: [
       "one-light-ui"
       "solarized-dark-syntax"
     ]
-    excludeVcsIgnoredPaths: false
-    projectHome: "/Users/bryanstedman/code"
+    audioBeep: false
   "linter-jshint":
     jshintExecutablePath: "/usr/local/bin/jshint"
-  linter: {}
+  linter:
+    showErrorTabLine: true
   "git-diff": {}
   "tree-view":
     hideIgnoredNames: true
   jsformat:
     format_on_save: false
+  tasks: {}
+  "todo-show": {}
+  emmet:
+    useEmmetComments: false
+  "linter-jscs":
+    preset: "jquery"
+    displayAs: "warning"
+    onlyConfig: true
+  "one-dark-ui": {}
+"source.gfm":
+  editor:
+    softWrap: true
+"exception-reporting":
+  userId: "bc2b427d-10d4-3ede-68cf-30f6e46f64b5"
+welcome:
+  showOnStartup: false
+metrics:
+  userId: "0f64de591a8851ec17f92e91340b70d43dcec51d"
