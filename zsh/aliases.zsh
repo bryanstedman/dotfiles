@@ -22,6 +22,7 @@ alias -- -="cd -"
 alias cl="clear"
 alias o='open .'
 alias a='atom .'
+alias ad='atom --dev .'
 
 # Git
 # alias g="git "
