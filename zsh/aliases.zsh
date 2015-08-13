@@ -21,6 +21,7 @@ alias -- -="cd -"
 # Shortcuts
 alias cl="clear"
 alias o='open .'
+alias a='atom .'
 
 # Git
 # alias g="git "
