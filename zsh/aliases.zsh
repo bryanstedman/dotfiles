@@ -67,6 +67,9 @@ alias be='bundle exec'
 alias bx='bundle exec'
 alias bake='bundle exec rake'
 
+# Rake
+alias ngrake='noglob rake'
+
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
