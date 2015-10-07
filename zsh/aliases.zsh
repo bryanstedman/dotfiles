@@ -23,6 +23,7 @@ alias cl="clear"
 alias o='open .'
 alias a='atom .'
 alias ad='atom --dev .'
+alias edithosts="atom /private/etc/hosts"
 
 # Git
 # alias g="git "
