@@ -9,8 +9,8 @@
     userId: "0f64de591a8851ec17f92e91340b70d43dcec51d"
   editor:
     invisibles: {}
-    fontSize: 16
     showInvisibles: true
+    fontSize: 15
   core:
     ignoredNames: [
       ".git"
@@ -32,6 +32,7 @@
     audioBeep: false
   "linter-jshint":
     jshintExecutablePath: "/usr/local/bin/jshint"
+    disableWhenNoJshintrcFileInPath: true
   linter:
     showErrorTabLine: true
   "git-diff": {}
@@ -47,7 +48,15 @@
     preset: "jquery"
     displayAs: "warning"
     onlyConfig: true
+    fixOnSave: true
   "one-dark-ui": {}
+  "linter-scss-lint": {}
+  "atom-color-highlight": {}
+  pigments:
+    sortPaletteColors: "by color"
+  "one-light-ui": {}
+  "advanced-new-file":
+    createFileInstantly: true
 "source.gfm":
   editor:
     softWrap: true
