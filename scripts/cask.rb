@@ -14,7 +14,6 @@ apps = %w{
   fantastical
   firefox
   ghostlab
-  github
   google-chrome
   hazel
   iterm2
@@ -22,7 +21,6 @@ apps = %w{
   mamp
   nvalt
   opendns-updater
-  scansnap-manager
   scrivener
   sequel-pro
   shortcat
