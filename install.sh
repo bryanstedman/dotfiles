@@ -26,6 +26,7 @@ else
   echo "Cloning dotfiles repo"
   git clone https://github.com/bryanstedman/dotfiles.git $dir/.dotfiles
 
+  source ~/.zshrc
 
   echo "Brewing"
   ruby $dir/.dotfiles/scripts/brewery.rb
