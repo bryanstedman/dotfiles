@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 
-puts "Tapping homebrew-cask..."
-puts 'brew tap phinze/homebrew-cask'
+puts "Installing homebrew-cask..."
+# puts 'brew tap phinze/homebrew-cask'
+puts "brew install caskroom/cask/brew-cask"
 
 brews = %w{
   ack
