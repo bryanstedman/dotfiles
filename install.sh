@@ -47,6 +47,10 @@ else
 
   source ~/.zshrc
 
+  echo "Installing Atom packages"
+  ruby $dir/.dotfiles/scripts/atom_packages.rb
+  echo "~~~~~~~~~~~~~~~~~"
+
   echo "Applying OSX settings"
   $dir/.dotfiles/osx/.osx
   echo "~~~~~~~~~~~~~~~~~"
