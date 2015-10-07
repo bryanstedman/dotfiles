@@ -17,10 +17,10 @@ else
   fi
 
   echo "Brewing"
-  ruby $dir/scripts/brewery.rb
+  ruby $dir/.dotfiles/scripts/brewery.rb
 
   echo "Installing brew cask applications"
-  ruby $dir/scripts/cask.rb
+  ruby $dir/.dotfiles/scripts/cask.rb
 
   echo "~~~~~~~~~~~~~~~~~"
 
@@ -29,11 +29,11 @@ else
   echo "~~~~~~~~~~~~~~~~~"
 
 	echo "Applying OSX settings"
-	$dir/osx/.osx
+	$dir/.dotfiles/osx/.osx
 	echo "~~~~~~~~~~~~~~~~~"
 
   echo "Setting up npm"
-  ruby $dir/scripts/npm_bundles.rb $1
+  ruby $dir/.dotfiles/scripts/npm_bundles.rb $1
   echo "~~~~~~~~~~~~~~~~~"
 
 
@@ -42,7 +42,7 @@ else
   #symlinks
   #zsh
   echo "Creating local files"
-  touch $dir/zsh/local.zsh
+  touch $dir/.dotfiles/zsh/local.zsh
   touch ~/.oh-my-zsh/custom/aliases.zsh
   touch ~/.oh-my-zsh/custom/functions.zsh
   touch ~/.oh-my-zsh/themes/hipster.zsh-theme
@@ -50,17 +50,17 @@ else
   touch ~/.gitignore_global
 
   echo "Symlinking ZSH"
-  ln -sf $dir/zsh/.zshrc ~/.zshrc
-  ln -sf $dir/zsh/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
-  ln -sf $dir/zsh/functions.zsh ~/.oh-my-zsh/custom/functions.zsh
-  ln -sf $dir/zsh/local.zsh ~/.oh-my-zsh/custom/local.zsh
-  ln -sf $dir/zsh/hipster.zsh-theme ~/.oh-my-zsh/themes/hipster.zsh-theme
+  ln -sf $dir/.dotfiles/zsh/.zshrc ~/.zshrc
+  ln -sf $dir/.dotfiles/zsh/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
+  ln -sf $dir/.dotfiles/zsh/functions.zsh ~/.oh-my-zsh/custom/functions.zsh
+  ln -sf $dir/.dotfiles/zsh/local.zsh ~/.oh-my-zsh/custom/local.zsh
+  ln -sf $dir/.dotfiles/zsh/hipster.zsh-theme ~/.oh-my-zsh/themes/hipster.zsh-theme
   echo "~~~~~~~~~~~~~~~~~"
 
   #git
   echo "Symlinking git"
-  ln -sf $dir/git/.gitconfig ~/.gitconfig
-  ln -sf $dir/git/.gitignore_global ~/.gitignore_global
+  ln -sf $dir/.dotfiles/git/.gitconfig ~/.gitconfig
+  ln -sf $dir/.dotfiles/git/.gitignore_global ~/.gitignore_global
   echo "~~~~~~~~~~~~~~~~~"
 
   # Atom Editor settings
@@ -71,11 +71,11 @@ else
   touch ~/.atom/snippets.cson
   touch ~/.atom/styles.less
 
-  ln -sf $dir/atom/config.cson ~/.atom/config.cson
-  ln -sf $dir/atom/init.coffee ~/.atom/init.coffee
-  ln -sf $dir/atom/keymap.cson ~/.atom/keymap.cson
-  ln -sf $dir/atom/snippets.cson ~/.atom/snippets.cson
-  ln -sf $dir/atom/styles.less ~/.atom/styles.less
+  ln -sf $dir/.dotfiles/atom/config.cson ~/.atom/config.cson
+  ln -sf $dir/.dotfiles/atom/init.coffee ~/.atom/init.coffee
+  ln -sf $dir/.dotfiles/atom/keymap.cson ~/.atom/keymap.cson
+  ln -sf $dir/.dotfiles/atom/snippets.cson ~/.atom/snippets.cson
+  ln -sf $dir/.dotfiles/atom/styles.less ~/.atom/styles.less
 
 
   echo "~~~~~~~~~~~~~~~~~"
