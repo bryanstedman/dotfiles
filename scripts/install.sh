@@ -30,6 +30,13 @@ else
   curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
   echo "~~~~~~~~~~~~~~~~~"
 
+  echo "Installing Custom Oh My Zsh Plugins"
+	cd ~/.oh-my-zsh/custom/plugins
+	git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
+  echo "~~~~~~~~~~~~~~~~~"
+
+	source ~/.zshrc
+
 	echo "Applying OSX settings"
 	$dir/.dotfiles/osx/.osx
 	echo "~~~~~~~~~~~~~~~~~"
