@@ -14,7 +14,6 @@ apps = %w{
   fantastical
   firefox
   ghostlab
-  google-chrome
   hazel
   iterm2
   mailbox
