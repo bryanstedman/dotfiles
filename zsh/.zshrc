@@ -58,4 +58,4 @@ export PATH=/Users/bryanstedman/.rbenv/shims:/Users/bryanstedman/code/lre-tools/
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # Specify your defaults in this environment variable
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/etc/Caskroom"
