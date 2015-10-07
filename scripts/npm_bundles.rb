@@ -20,8 +20,7 @@ npms = {
   "bower" => "",
   "grunt-cli" => "grunt",
   "gulp" => "",
-  "is-up" => "",
-  "slap" => ""
+  "is-up" => ""
 }
 
 npms.each do |mod, command|
