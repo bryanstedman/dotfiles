@@ -3,6 +3,8 @@ then
 	echo "You need to install ruby first"
 else
 
+	source ~/.zshrc
+
   cd ~
 
   dir=$(pwd) # dotfiles directory
