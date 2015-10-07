@@ -9,11 +9,7 @@ apps = %w{
   alfred
   atom
   bartender
-  bettertouchtool
   boom
-  codekit
-  crashplan
-  dash
   dropbox
   fantastical
   firefox
@@ -21,26 +17,19 @@ apps = %w{
   github
   google-chrome
   hazel
-  hipchat
   iterm2
-  limechat
   mailbox
   mamp
   nvalt
   opendns-updater
-  opera
   scansnap-manager
   scrivener
   sequel-pro
   shortcat
-  sketch
   spectacle
-  spotify
   superduper
   textexpander
   things
-  titanium-studio
-  torbrowser
   vlc
   xquartz
 }
