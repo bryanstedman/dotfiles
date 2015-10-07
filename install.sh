@@ -12,7 +12,7 @@ else
     echo "  x You'll need to install Homebrew first:"
     # echo "    https://github.com/mxcl/homebrew/wiki/installation
     echo " Installing Homebrew"
-    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     exit
   fi
 
