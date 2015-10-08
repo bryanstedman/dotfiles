@@ -35,6 +35,14 @@ else
 	git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
   echo "~~~~~~~~~~~~~~~~~"
 
+  echo "Symlinking ZSH"
+  ln -sf $dir/.dotfiles/zsh/.zshrc ~/.zshrc
+  ln -sf $dir/.dotfiles/zsh/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
+  ln -sf $dir/.dotfiles/zsh/functions.zsh ~/.oh-my-zsh/custom/functions.zsh
+  ln -sf $dir/.dotfiles/zsh/local.zsh ~/.oh-my-zsh/custom/local.zsh
+  ln -sf $dir/.dotfiles/zsh/hipster.zsh-theme ~/.oh-my-zsh/themes/hipster.zsh-theme
+  echo "~~~~~~~~~~~~~~~~~"
+
 	source ~/.zshrc
 
 	echo "Installing Atom packages"
@@ -50,7 +58,7 @@ else
   echo "~~~~~~~~~~~~~~~~~"
 
 
-  echo "Symlinking"
+  # echo "Symlinking"
 
   #symlinks
   #zsh
@@ -61,14 +69,6 @@ else
   touch ~/.oh-my-zsh/themes/hipster.zsh-theme
   touch ~/.gitconfig
   touch ~/.gitignore_global
-
-  echo "Symlinking ZSH"
-  ln -sf $dir/.dotfiles/zsh/.zshrc ~/.zshrc
-  ln -sf $dir/.dotfiles/zsh/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
-  ln -sf $dir/.dotfiles/zsh/functions.zsh ~/.oh-my-zsh/custom/functions.zsh
-  ln -sf $dir/.dotfiles/zsh/local.zsh ~/.oh-my-zsh/custom/local.zsh
-  ln -sf $dir/.dotfiles/zsh/hipster.zsh-theme ~/.oh-my-zsh/themes/hipster.zsh-theme
-  echo "~~~~~~~~~~~~~~~~~"
 
   #git
   echo "Symlinking git"
