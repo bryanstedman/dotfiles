@@ -45,25 +45,6 @@ else
   git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
   echo "~~~~~~~~~~~~~~~~~"
 
-  source ~/.zshrc
-
-  echo "Installing Atom packages"
-  ruby $dir/.dotfiles/scripts/atom_packages.rb
-  echo "~~~~~~~~~~~~~~~~~"
-
-  echo "Applying OSX settings"
-  $dir/.dotfiles/osx/.osx
-  echo "~~~~~~~~~~~~~~~~~"
-
-  echo "Setting up npm"
-  ruby $dir/.dotfiles/scripts/npm_bundles.rb $1
-  echo "~~~~~~~~~~~~~~~~~"
-
-
-  echo "Symlinking"
-
-  #symlinks
-  #zsh
   echo "Creating local files"
   touch $dir/.dotfiles/zsh/local.zsh
   touch ~/.oh-my-zsh/custom/aliases.zsh
@@ -79,6 +60,26 @@ else
   ln -sf $dir/.dotfiles/zsh/local.zsh ~/.oh-my-zsh/custom/local.zsh
   ln -sf $dir/.dotfiles/zsh/hipster.zsh-theme ~/.oh-my-zsh/themes/hipster.zsh-theme
   echo "~~~~~~~~~~~~~~~~~"
+
+  source ~/.zshrc
+
+  echo "Installing Atom packages"
+  ruby $dir/.dotfiles/scripts/atom_packages.rb
+  echo "~~~~~~~~~~~~~~~~~"
+
+  echo "Applying OSX settings"
+  $dir/.dotfiles/osx/.osx
+  echo "~~~~~~~~~~~~~~~~~"
+
+  echo "Setting up npm"
+  ruby $dir/.dotfiles/scripts/npm_bundles.rb $1
+  echo "~~~~~~~~~~~~~~~~~"
+
+
+  # echo "Symlinking"
+
+  #symlinks
+  #zsh
 
   #git
   echo "Symlinking git"
