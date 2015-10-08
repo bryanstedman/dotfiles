@@ -35,6 +35,14 @@ else
 	git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
   echo "~~~~~~~~~~~~~~~~~"
 
+	echo "Creating local files"
+	touch $dir/.dotfiles/zsh/local.zsh
+	touch ~/.oh-my-zsh/custom/aliases.zsh
+	touch ~/.oh-my-zsh/custom/functions.zsh
+	touch ~/.oh-my-zsh/themes/hipster.zsh-theme
+	touch ~/.gitconfig
+	touch ~/.gitignore_global
+
   echo "Symlinking ZSH"
   ln -sf $dir/.dotfiles/zsh/.zshrc ~/.zshrc
   ln -sf $dir/.dotfiles/zsh/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
@@ -59,16 +67,6 @@ else
 
 
   # echo "Symlinking"
-
-  #symlinks
-  #zsh
-  echo "Creating local files"
-  touch $dir/.dotfiles/zsh/local.zsh
-  touch ~/.oh-my-zsh/custom/aliases.zsh
-  touch ~/.oh-my-zsh/custom/functions.zsh
-  touch ~/.oh-my-zsh/themes/hipster.zsh-theme
-  touch ~/.gitconfig
-  touch ~/.gitignore_global
 
   #git
   echo "Symlinking git"
